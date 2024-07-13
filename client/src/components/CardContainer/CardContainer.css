@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .card {
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    width: 400px;
+    height: 75%;
+    background-color: #f1faee;
+    border-radius: 10px;
+    margin: 100px;
+    padding: 20px;
+    color: rgb(32, 36, 29);
+    box-shadow: rgb(255, 255, 255, 0.5) 0px 2px 8px 0px;
+  }
+  
