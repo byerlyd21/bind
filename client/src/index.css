@@ -1,42 +1,26 @@
 :root {
-  /* Theme: Melon-pop */
-  --theme-melon-pop-primary-light: #f1faee;
-  --theme-melon-pop-primary-dark: rgb(14, 19, 8);
-  --theme-melon-pop-secondary-light: #ffb6c1;
-  --theme-melon-pop-secondary-dark: #8b5f65;
 
-  /* Theme: Melon-muted */
-  --theme-melon-muted-primary-light: #f1faee;
-  --theme-melon-muted-primary-dark: rgb(14, 19, 8);
-  --theme-melon-muted-secondary-light: #f0f0f3;
-  --theme-melon-muted-secondary-dark: #787c99;
-
-  /* Theme: Blue */
-  --theme-blue-primary-light: #f1faee;
-  --theme-blue-primary-dark: rgb(14, 19, 8);
-  --theme-blue-secondary-light: #add8e6;
-  --theme-blue-secondary-dark: #4682b4;
-
-  /* Theme: Green */
-  --theme-green-primary-light: #f1faee;
-  --theme-green-primary-dark: rgb(14, 19, 8);
-  --theme-green-secondary-light: #98fb98;
-  --theme-green-secondary-dark: #3cb371;
-
-  --theme-background: var(--theme-melon-pop-primary-light); /* Default background */
-  --theme-color: var(--theme-melon-pop-primary-dark); /* Default text color */
+  --primary-dark-g: rgb(14,19,8);
+  --primary-light-g: #f1faee;
 
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: var(--theme-color);
-  background-color: var(--theme-background);
+  color: var(--primary-dark-g);
+  background-color: var(--primary-light-g);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  
+}
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
 }

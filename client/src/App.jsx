@@ -7,13 +7,7 @@ import FeatureBoxes from './components/featureBoxes/FeatureBoxes'
 import Footer from './components/Footer/Footer';
 import ColorSelector from './components/ColorSelector/ColorSelector';
 
-const App = () => {
-  const [themeVars, setThemeVars] = useState({
-    primaryLight: '--theme-melon-pop-primary-light',
-    primaryDark: '--theme-melon-pop-primary-dark',
-    secondaryLight: '--theme-melon-pop-secondary-light',
-    secondaryDark: '--theme-melon-pop-secondary-dark',
-  });
+function App() {
 
   async function logout() {
     const res = await fetch("/registration/logout/", {
@@ -40,13 +34,6 @@ const App = () => {
     }
   };
 
-
-  const handleColorChange = (vars) => {
-    setThemeVars(vars);
-    document.documentElement.style.setProperty('--theme-background', `var(${vars.primaryLight})`);
-    document.documentElement.style.setProperty('--theme-color', `var(${vars.primaryDark})`);
-  };
-
   return (
     <>
       <SectionA titleExpansion={titleExpansion} />
@@ -55,7 +42,6 @@ const App = () => {
       </SectionB>
       <SectionB color="#f1faee"></SectionB>
       <SectionB color="#f1faee"></SectionB>
-      <ColorSelector onColorChange={handleColorChange} />
       <Footer/>
     </>
   )
