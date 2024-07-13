@@ -1,0 +1,30 @@
+.feature-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 50%;
+    margin: 100px;
+    padding: 20px;
+    color: #f1faee;
+    text-align: center;
+  }
+
+  .line {
+    height: 40%;
+    width: 1px;
+    background-color: #f1faee;
+  }
+
+  h3 {
+    color: rgb(255, 87, 51)
+  }

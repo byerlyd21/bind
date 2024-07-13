@@ -1,10 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import './SectionA.css';
 
-const SectionA = () => {
+const SectionA = ({ titleExpansion })=> {
+  useEffect(() => {
+    titleExpansion();
+  }, [titleExpansion]);
+
   return (
     <div className="section-a">
-      <h1>Avvant</h1>
+      <h1>VERA</h1>
       <h3>Secure. Easy. Reliable.</h3>
     </div>
   );
